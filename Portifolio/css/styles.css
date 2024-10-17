@@ -1,0 +1,682 @@
+/* Estilos gerais */
+/* Remove margens e preenchimentos padrão de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove a rolagem horizontal no documento */
+html {
+    overflow-x: hidden;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+    background-color: white; /* Define a cor de fundo do corpo */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão */
+    font-family: Montserrat; /* Sobrescreve a fonte padrão para Montserrat */
+    overflow-x: hidden; /* Remove a rolagem horizontal no corpo */
+}
+
+/* Define margens para o contêiner principal */
+.container {
+    margin: 0 206px;
+}
+
+/* Estilos para o cabeçalho e rodapé */
+.header, .footer {
+    display: flex; /* Usa layout flexível */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    padding: 57px 0; /* Adiciona preenchimento vertical */
+}
+
+/* Estilos para links dentro de .img no cabeçalho e rodapé */
+.header .img a, 
+footer .img a {
+    display: flex; /* Usa layout flexível */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    color: black; /* Define a cor do texto */
+}
+
+/* Estilos para imagens dentro de .img no cabeçalho e rodapé */
+.header .img img,
+footer .img img {
+    max-width: 57px; /* Define a largura máxima */
+    padding-right: .5em; /* Adiciona preenchimento à direita */
+}
+
+/* Estilos para listas no cabeçalho */
+.header ul {
+    display: flex; /* Usa layout flexível */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+/* Estilos para itens de lista no cabeçalho */
+.header ul li {
+    list-style: none; /* Remove marcadores de lista */
+    padding-left: 7em; /* Adiciona preenchimento à esquerda */
+}
+
+/* Estilos gerais para links e parágrafos no cabeçalho e rodapé */
+.header a,
+.footer a,
+.footer p {
+    color: black; /* Define a cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 14px; /* Define o tamanho da fonte */
+    font-family: Montserrat; /* Define a fonte */
+    font-weight: 400; /* Define o peso da fonte */
+    line-height: 17px; /* Define a altura da linha */
+    padding: 2rem; /* Adiciona preenchimento */
+}
+
+/* Estilos para links no menu ao passar o mouse */
+#menu li a:hover {
+    background: rgba(0,0,0,0.05); /* Define a cor de fundo ao passar o mouse */
+}
+
+/* Estilos para spans no cabeçalho e rodapé */
+.header span,
+.footer span {
+    font-size: 35px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define o peso da fonte */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: #1A1A1A; /* Define a cor de fundo */
+    height: 100%; /* Define a altura */
+}
+
+/* Estilos para spans e parágrafos no rodapé */
+.footer span, 
+.footer p {
+    color: #fff; /* Define a cor do texto */
+}
+
+/* Estilos para a seção de notificação */
+#notify {
+    margin-top: 5.5em; /* Adiciona margem superior */
+}
+
+/* Estilos para o contêiner de imagem */
+.barrel {
+    display: flex; /* Usa layout flexível */
+}
+
+/* Estilos para imagens dentro de .barrel */
+.barrel img {
+    width: 50%; /* Define a largura */
+    height: auto; /* Define a altura automática */
+    max-height: 842.68px; /* Define a altura máxima */
+    max-width: 1000px; /* Define a largura máxima */
+}
+
+/* Estilos para a notificação */
+.notification {
+    width: 37%; /* Define a largura */
+    padding-right: 100px; /* Adiciona preenchimento à direita */
+}
+
+/* Estilos para o título da notificação */
+.notification h1 {
+    margin-top: 1em; /* Adiciona margem superior */
+    font-size: 3.3vw; /* Define o tamanho da fonte */
+    font-family: Montserrat; /* Define a fonte */
+    font-weight: 700; /* Define o peso da fonte */
+    line-height: 78px; /* Define a altura da linha */
+    margin-bottom: .7em; /* Adiciona margem inferior */
+    color: #1A1A1A; /* Define a cor do texto */
+}
+
+/* Estilos para parágrafos na notificação */
+.notification p {
+    font-size: 1.5vw; /* Define o tamanho da fonte */
+    font-family: Montserrat; /* Define a fonte */
+    font-weight: 400; /* Define o peso da fonte */
+    line-height: 43px; /* Define a altura da linha */
+    margin-bottom: .7em; /* Adiciona margem inferior */
+    color: #595959; /* Define a cor do texto */
+}
+
+/* Estilos para botões na notificação */
+.notification button {
+    font-size: 1.25vw; /* Define o tamanho da fonte */
+    font-family: Montserrat; /* Define a fonte */
+    font-weight: 600; /* Define o peso da fonte */
+    line-height: 30px; /* Define a altura da linha */
+    color: #0074FF; /* Define a cor do texto */
+    padding: 22px 36px 21px 36px; /* Adiciona preenchimento */
+    cursor: pointer; /* Define o cursor ao passar o mouse */
+}
+
+/* Estilos para seções de localização, informação e segmento */
+.location, .info, .seg {
+    display: flex; /* Usa layout flexível */
+    flex-direction: column; /* Define a direção dos itens */
+    align-items: center; /* Alinha os itens ao centro */
+    margin-top: 7em; /* Adiciona margem superior */
+}
+
+/* Estilos para títulos nas seções de localização, informação e segmento */
+.location h2, .info h2, .seg h2 {
+    font-size: 3vw; /* Define o tamanho da fonte */
+    font-family: Montserrat; /* Define a fonte */
+    font-weight: 700; /* Define o peso da fonte */
+    line-height: 59px; /* Define a altura da linha */
+    margin-bottom: 2em; /* Adiciona margem inferior */
+    color: #1A1A1A; /* Define a cor do texto */
+}
+
+/* Estilos para parágrafos nas seções de localização, informação e segmento */
+.location p, .info p, .seg p {
+    font-size: 1.5vw; /* Define o tamanho da fonte */
+    font-family: Montserrat; /* Define a fonte */
+    font-weight: 400; /* Define o peso da fonte */
+    line-height: 44px; /* Define a altura da linha */
+    margin-bottom: 2.2em; /* Adiciona margem inferior */
+    padding: 0 138px; /* Adiciona preenchimento horizontal */
+    color: #595959; /* Define a cor do texto */
+}
+
+/* Estilos para o contêiner do mapa */
+.mapapouter {
+    display: flex; /* Usa layout flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+/* Estilos para a linha de sublinhado */
+.underline {
+    margin-top: 3em; /* Adiciona margem superior */
+    height: 3px; /* Define a altura */
+    background: black; /* Define a cor de fundo */
+    width: 316px; /* Define a largura */
+}
+
+/* Estilos adicionais para as seções de informação e segmento */
+.info, .seg {
+    margin-top: 14.5em; /* Adiciona margem superior */
+}
+
+/* Estilos para o contêiner de cartões */
+.cards {
+    display: flex; /* Usa layout flexível */
+    justify-items: center; /* Centraliza os itens */
+    width: 100%; /* Define a largura */
+    align-items: stretch; /* Estica os itens para preencher o contêiner */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+}
+
+/* Estilos para cartões azuis */
+.blueCard {
+    background: #0074FF; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
+    border: solid 1px #0074FF; /* Define a borda */
+    margin: 7.5px 7.5px; /* Adiciona margem */
+    width: 309px; /* Define a largura */
+    height: auto; /* Define a altura automática */
+    min-height: 470px; /* Define a altura mínima */
+}
+
+/* Estilos para títulos dentro dos cartões azuis */
+.blueCard h3 {
+    font-size: 30px; /* Define o tamanho da fonte */
+    font-family: Montserrat; /* Define a fonte */
+    font-weight: 400; /* Define o peso da fonte */
+    line-height: 44px; /* Define a altura da linha */
+    padding: 105px 46px 70px; /* Adiciona preenchimento */
+}
+/* Estilos para listas dentro de .blueCard */
+.blueCard ul {
+    padding-left: 16px; /* Adiciona preenchimento à esquerda */
+}
+
+/* Estilos para o texto dentro de .blueCard */
+.blueCardText {
+    padding: 0px 0px 53px 10px; /* Adiciona preenchimento */
+    font-size: 14px; /* Define o tamanho da fonte */
+}
+
+/* Estilos para o número dentro de .blueCard */
+.blueCard .number {
+    position: absolute; /* Define a posição absoluta */
+    margin-top: 35px; /* Adiciona margem superior */
+    margin-left: 13px; /* Adiciona margem à esquerda */
+}
+
+/* Estilos para o contêiner de segmento */
+.containerSegmento {
+    display: grid; /* Usa layout de grade */
+    grid-template-columns: 1fr 1fr 1fr; /* Define três colunas iguais */
+    gap: 80px 100px; /* Define o espaçamento entre os itens */
+    margin: 77px 100px 230px 100px; /* Adiciona margens */
+}
+
+/* Estilos para o segmento de cartão */
+.cardSegmento {
+    display: flex; /* Usa layout flexível */
+}
+
+/* Estilos para a imagem do cartão */
+.cardImg {
+    margin-right: 17px; /* Adiciona margem à direita */
+}
+
+/* Estilos para a imagem dentro de .cardImg */
+.cardImg .img {
+    border-bottom: 1px solid #333; /* Adiciona borda inferior */
+    border-right: 1px solid #333; /* Adiciona borda direita */
+    padding-right: 20px; /* Adiciona preenchimento à direita */
+    padding-bottom: 20px; /* Adiciona preenchimento inferior */
+    min-width: 57px; /* Define a largura mínima */
+    min-height: 109px; /* Define a altura mínima */
+    align-items: center; /* Alinha os itens ao centro */
+    display: flex; /* Usa layout flexível */
+}
+
+/* Estilos para o texto dentro de .cardSegmento */
+.cardSegmento .text {
+    padding-top: 109px; /* Adiciona preenchimento superior */
+}
+
+/* Estilos para o título dentro de .cardSegmento */
+.cardSegmento .text h3 {
+    font-size: 24px; /* Define o tamanho da fonte */
+    font-family: Montserrat; /* Define a fonte */
+    font-weight: 600; /* Define o peso da fonte */
+    line-height: 30px; /* Define a altura da linha */
+    color: black; /* Define a cor do texto */
+}
+
+/* Estilos para o parágrafo dentro de .cardSegmento */
+.cardSegmento .text p {
+    font-size: 18px; /* Define o tamanho da fonte */
+    font-family: Montserrat; /* Define a fonte */
+    font-weight: 400; /* Define o peso da fonte */
+    line-height: 21px; /* Define a altura da linha */
+    color: #595959; /* Define a cor do texto */
+    padding-top: 15px; /* Adiciona preenchimento superior */
+}
+
+/* Estilos para o círculo 1 */
+.circle1 {
+    width: 673px; /* Define a largura */
+    height: 673px; /* Define a altura */
+    background: rgba(0, 116, 255, 0.2); /* Define a cor de fundo */
+    position: absolute; /* Define a posição absoluta */
+    border-radius: 50%; /* Define bordas arredondadas */
+    left: 0px; /* Define a posição à esquerda */
+    overflow-x: hidden; /* Oculta o excesso no eixo x */
+    margin-left: -202px; /* Adiciona margem à esquerda */
+    z-index: -5; /* Define o índice z */
+}
+
+/* Estilos para o círculo 2 */
+.circle2 {
+    width: 673px; /* Define a largura */
+    height: 673px; /* Define a altura */
+    border: 5px solid #0074FF; /* Define a borda */
+    position: absolute; /* Define a posição absoluta */
+    border-radius: 50%; /* Define bordas arredondadas */
+    right: 0px; /* Define a posição à direita */
+    overflow-x: hidden; /* Oculta o excesso no eixo x */
+    margin-right: -178px; /* Adiciona margem à direita */
+    z-index: -5; /* Define o índice z */
+}
+
+/* Estilos para o botão de menu */
+#btnMenu {
+    display: none; /* Oculta o botão */
+}
+
+/* Estilos de responsividade para telas menores que 1400px */
+@media (max-width: 1400px) {
+    .header ul li {
+        padding-left: 0em; /* Remove preenchimento à esquerda */
+    }
+}
+
+/* Estilos de responsividade para telas menores que 1100px */
+@media (max-width: 1100px) {
+    .containerSegmento {
+        grid-template-columns: 1fr 1fr; /* Define duas colunas iguais */
+        margin: 77px 30px 230px 30px; /* Adiciona margens */
+    }
+    .notification h1 {
+        font-size: 9vw; /* Define o tamanho da fonte */
+    }
+    .notification p, .location p, .info p, .seg p {
+        font-size: 4vw; /* Define o tamanho da fonte */
+    }
+    .notification button {
+        font-size: 3vw; /* Define o tamanho da fonte */
+    }
+    .location h2, .info h2, .seg h2 {
+        font-size: 8vw; /* Define o tamanho da fonte */
+    }
+}
+
+/* Estilos de responsividade para telas menores que 1050px */
+@media (max-width: 1050px) {
+    .barrel {
+        display: flex; /* Usa layout flexível */
+        align-items: center; /* Alinha os itens ao centro */
+        justify-items: center; /* Centraliza os itens */
+        flex-direction: column; /* Define a direção dos itens */
+    }
+    .barrel img {
+        width: 100%; /* Define a largura */
+        height: auto; /* Define a altura automática */
+        max-height: 842.68px; /* Define a altura máxima */
+        max-width: 1000px; /* Define a largura máxima */
+    }
+    .notification {
+        width: 50%; /* Define a largura */
+        padding-right: 100px; /* Adiciona preenchimento à direita */
+    }
+}
+
+/* Estilos de responsividade para telas menores que 917px */
+@media (max-width: 917px) {
+    #menu {
+        display: block; /* Exibe o menu */
+        display: none; /* Oculta o menu */
+        position: absolute; /* Define a posição absoluta */
+        width: 100%; /* Define a largura */
+        top: 170px; /* Define a posição superior */
+        right: 0px; /* Define a posição à direita */
+        z-index: 100; /* Define o índice z */
+        transition: .2s; /* Define a transição */
+        overflow-y: hidden; /* Oculta o excesso no eixo y */
+        background: #333; /* Define a cor de fundo */
+        padding-bottom: 1em; /* Adiciona preenchimento inferior */
+    }
+    #menu li { 
+        padding: 0; /* Remove preenchimento */
+    }
+    #menu a {
+        border-bottom: 1px solid #333; /* Adiciona borda inferior */
+        display: block; /* Exibe como bloco */
+        padding: .7rem; /* Adiciona preenchimento */
+        margin: 0rem 3rem 0rem 2.5rem; /* Adiciona margens */
+    }
+    .container {
+        margin: 0 30px; /* Adiciona margens */
+    }
+    #nav.active #menu {
+        display: block; /* Exibe o menu */
+    }
+    #btnMenu {
+        color: #1A1A1A; /* Define a cor do texto */
+        display: flex; /* Usa layout flexível */
+        padding: .5rem 1rem; /* Adiciona preenchimento */
+        font-size: 1rem; /* Define o tamanho da fonte */
+        border: none; /* Remove borda */
+        background: none; /* Remove fundo */
+        cursor: pointer; /* Define o cursor */
+        gap: .5rem; /* Define o espaçamento */
+    }
+    #hamburger {
+        display: block; /* Exibe como bloco */
+        width: 20px; /* Define a largura */
+        border-top: 2px solid; /* Adiciona borda superior */
+    }
+    #hamburger::after, #hamburger::before {
+        content: ''; /* Adiciona conteúdo vazio */
+        display: block; /* Exibe como bloco */
+        width: 20px; /* Define a largura */
+        height: 2px; /* Define a altura */
+        background: currentColor; /* Define a cor de fundo */
+        margin-top: 5px; /* Adiciona margem superior */
+        transition: .3s; /* Define a transição */
+        position: relative; /* Define a posição relativa */
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent; /* Torna a borda superior transparente */
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg); /* Rotaciona o elemento */
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg); /* Rotaciona o elemento */
+        top: -7px; /* Define a posição superior */
+    }
+}
+/* Estilos para listas dentro de .blueCard */
+.blueCard ul {
+    padding-left: 16px; /* Adiciona preenchimento à esquerda */
+}
+
+/* Estilos para o texto dentro de .blueCard */
+.blueCardText {
+    padding: 0px 0px 53px 10px; /* Adiciona preenchimento */
+    font-size: 14px; /* Define o tamanho da fonte */
+}
+
+/* Estilos para o número dentro de .blueCard */
+.blueCard .number {
+    position: absolute; /* Define a posição absoluta */
+    margin-top: 35px; /* Adiciona margem superior */
+    margin-left: 13px; /* Adiciona margem à esquerda */
+}
+
+/* Estilos para o contêiner de segmento */
+.containerSegmento {
+    display: grid; /* Usa layout de grade */
+    grid-template-columns: 1fr 1fr 1fr; /* Define três colunas iguais */
+    gap: 80px 100px; /* Define o espaçamento entre os itens */
+    margin: 77px 100px 230px 100px; /* Adiciona margens */
+}
+
+/* Estilos para o segmento de cartão */
+.cardSegmento {
+    display: flex; /* Usa layout flexível */
+}
+
+/* Estilos para a imagem do cartão */
+.cardImg {
+    margin-right: 17px; /* Adiciona margem à direita */
+}
+
+/* Estilos para a imagem dentro de .cardImg */
+.cardImg .img {
+    border-bottom: 1px solid #333; /* Adiciona borda inferior */
+    border-right: 1px solid #333; /* Adiciona borda direita */
+    padding-right: 20px; /* Adiciona preenchimento à direita */
+    padding-bottom: 20px; /* Adiciona preenchimento inferior */
+    min-width: 57px; /* Define a largura mínima */
+    min-height: 109px; /* Define a altura mínima */
+    align-items: center; /* Alinha os itens ao centro */
+    display: flex; /* Usa layout flexível */
+}
+
+/* Estilos para o texto dentro de .cardSegmento */
+.cardSegmento .text {
+    padding-top: 109px; /* Adiciona preenchimento superior */
+}
+
+/* Estilos para o título dentro de .cardSegmento */
+.cardSegmento .text h3 {
+    font-size: 24px; /* Define o tamanho da fonte */
+    font-family: Montserrat; /* Define a fonte */
+    font-weight: 600; /* Define o peso da fonte */
+    line-height: 30px; /* Define a altura da linha */
+    color: black; /* Define a cor do texto */
+}
+
+/* Estilos para o parágrafo dentro de .cardSegmento */
+.cardSegmento .text p {
+    font-size: 18px; /* Define o tamanho da fonte */
+    font-family: Montserrat; /* Define a fonte */
+    font-weight: 400; /* Define o peso da fonte */
+    line-height: 21px; /* Define a altura da linha */
+    color: #595959; /* Define a cor do texto */
+    padding-top: 15px; /* Adiciona preenchimento superior */
+}
+
+/* Estilos para o círculo 1 */
+.circle1 {
+    width: 673px; /* Define a largura */
+    height: 673px; /* Define a altura */
+    background: rgba(0, 116, 255, 0.2); /* Define a cor de fundo */
+    position: absolute; /* Define a posição absoluta */
+    border-radius: 50%; /* Define bordas arredondadas */
+    left: 0px; /* Define a posição à esquerda */
+    overflow-x: hidden; /* Oculta o excesso no eixo x */
+    margin-left: -202px; /* Adiciona margem à esquerda */
+    z-index: -5; /* Define o índice z */
+}
+
+/* Estilos para o círculo 2 */
+.circle2 {
+    width: 673px; /* Define a largura */
+    height: 673px; /* Define a altura */
+    border: 5px solid #0074FF; /* Define a borda */
+    position: absolute; /* Define a posição absoluta */
+    border-radius: 50%; /* Define bordas arredondadas */
+    right: 0px; /* Define a posição à direita */
+    overflow-x: hidden; /* Oculta o excesso no eixo x */
+    margin-right: -178px; /* Adiciona margem à direita */
+    z-index: -5; /* Define o índice z */
+}
+
+/* Estilos para o botão de menu */
+#btnMenu {
+    display: none; /* Oculta o botão */
+}
+
+/* Estilos de responsividade para telas menores que 1400px */
+@media (max-width: 1400px) {
+    .header ul li {
+        padding-left: 0em; /* Remove preenchimento à esquerda */
+    }
+}
+
+/* Estilos de responsividade para telas menores que 1100px */
+@media (max-width: 1100px) {
+    .containerSegmento {
+        grid-template-columns: 1fr 1fr; /* Define duas colunas iguais */
+        margin: 77px 30px 230px 30px; /* Adiciona margens */
+    }
+    .notification h1 {
+        font-size: 9vw; /* Define o tamanho da fonte */
+    }
+    .notification p, .location p, .info p, .seg p {
+        font-size: 4vw; /* Define o tamanho da fonte */
+    }
+    .notification button {
+        font-size: 3vw; /* Define o tamanho da fonte */
+    }
+    .location h2, .info h2, .seg h2 {
+        font-size: 8vw; /* Define o tamanho da fonte */
+    }
+}
+
+/* Estilos de responsividade para telas menores que 1050px */
+@media (max-width: 1050px) {
+    .barrel {
+        display: flex; /* Usa layout flexível */
+        align-items: center; /* Alinha os itens ao centro */
+        justify-items: center; /* Centraliza os itens */
+        flex-direction: column; /* Define a direção dos itens */
+    }
+    .barrel img {
+        width: 100%; /* Define a largura */
+        height: auto; /* Define a altura automática */
+        max-height: 842.68px; /* Define a altura máxima */
+        max-width: 1000px; /* Define a largura máxima */
+    }
+    .notification {
+        width: 50%; /* Define a largura */
+        padding-right: 100px; /* Adiciona preenchimento à direita */
+    }
+}
+
+/* Estilos de responsividade para telas menores que 917px */
+@media (max-width: 917px) {
+    #menu {
+        display: block; /* Exibe o menu */
+        display: none; /* Oculta o menu */
+        position: absolute; /* Define a posição absoluta */
+        width: 100%; /* Define a largura */
+        top: 170px; /* Define a posição superior */
+        right: 0px; /* Define a posição à direita */
+        z-index: 100; /* Define o índice z */
+        transition: .2s; /* Define a transição */
+        overflow-y: hidden; /* Oculta o excesso no eixo y */
+        background: #333; /* Define a cor de fundo */
+        padding-bottom: 1em; /* Adiciona preenchimento inferior */
+    }
+    #menu li { 
+        padding: 0; /* Remove preenchimento */
+    }
+    #menu a {
+        border-bottom: 1px solid #333; /* Adiciona borda inferior */
+        display: block; /* Exibe como bloco */
+        padding: .7rem; /* Adiciona preenchimento */
+        margin: 0rem 3rem 0rem 2.5rem; /* Adiciona margens */
+    }
+    .container {
+        margin: 0 30px; /* Adiciona margens */
+    }
+    #nav.active #menu {
+        display: block; /* Exibe o menu */
+    }
+    #btnMenu {
+        color: #1A1A1A; /* Define a cor do texto */
+        display: flex; /* Usa layout flexível */
+        padding: .5rem 1rem; /* Adiciona preenchimento */
+        font-size: 1rem; /* Define o tamanho da fonte */
+        border: none; /* Remove borda */
+        background: none; /* Remove fundo */
+        cursor: pointer; /* Define o cursor */
+        gap: .5rem; /* Define o espaçamento */
+    }
+    #hamburger {
+        display: block; /* Exibe como bloco */
+        width: 20px; /* Define a largura */
+        border-top: 2px solid; /* Adiciona borda superior */
+    }
+    #hamburger::after, #hamburger::before {
+        content: ''; /* Adiciona conteúdo vazio */
+        display: block; /* Exibe como bloco */
+        width: 20px; /* Define a largura */
+        height: 2px; /* Define a altura */
+        background: currentColor; /* Define a cor de fundo */
+        margin-top: 5px; /* Adiciona margem superior */
+        transition: .3s; /* Define a transição */
+        position: relative; /* Define a posição relativa */
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent; /* Torna a borda superior transparente */
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg); /* Rotaciona o elemento */
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg); /* Rotaciona o elemento */
+        top: -7px; /* Define a posição superior */
+    }
+}.notification a {
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.notification button {
+    font-size: 1.25vw; /* Define o tamanho da fonte */
+    font-family: Montserrat; /* Define a fonte */
+    font-weight: 600; /* Define o peso da fonte */
+    line-height: 30px; /* Define a altura da linha */
+    color: #0074FF; /* Define a cor do texto */
+    padding: 22px 36px 21px 36px; /* Adiciona preenchimento */
+    cursor: pointer; /* Define o cursor ao passar o mouse */
+    margin-top: 10px; /* Adiciona margem superior */
+    display: inline-block; /* Exibe como bloco inline */
+}
+
+.notification button:hover {
+    background: rgba(0,0,0,0.05); /* Define a cor de fundo ao passar o mouse */
+}

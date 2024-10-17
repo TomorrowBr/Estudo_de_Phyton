@@ -1,0 +1,34 @@
+body {
+    background-color: white;
+    height: 100vh;
+    color: lavender;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    color: black; /* Cor do texto do h1 */
+}
+
+#btnsim, #btnnao {
+    background-color: lightgreen;
+    color: black; /* Cor do texto mais escura */
+    width: 250px; /* Aumenta a largura dos botões */
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none; /* Remove a borda */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave */
+}
+#btnnao {
+    background-color: lightcoral;
+}
+
+#btnnao:hover {
+    background-color: lightgreen;
+    color: darkgreen;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+}

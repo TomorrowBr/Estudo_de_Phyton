@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  minimum-scale=1.0" >
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="header" id="nav">
+                <div class="img">
+                    <a href="#">
+                        <img src="./img/alvo.png" alt="logo">
+                        <span>TDX</span>
+                    </a>
+                </div>
+
+                <button id="btnMenu">Menu
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu">
+                    <li><a href="#top" style="font-weight: bold;">Inicio</a></li>
+                    <li><a href="#local">Localização</a></li>
+                    <li><a href="#server">Serviços</a></li>
+                    <li><a href="#seguimentos">Segmentos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="notify">
+        <div class="barrel">
+            <img src="./img/alvoFlecha.png" alt="imagem">
+            <div class="notification">
+                <h1>Transformação Digital</h1>
+                <p>A Transformação Digital Extreme (TDX) é a principal fonte de dados e insights do mercado sobre interconexão e seu impacto crescente no mundo digital. Mostra o que os líderes digitais de todos os setores estão fazendo para acelerar suas estratégias digital-first.</p>
+                <button onclick="getNotification()" id="btnNotify">Ativar Notificações</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="local">
+        <div class="container">
+            <div class="location">
+                <div class="circle1"></div>
+                <h2>Localização</h2>
+                <p> Aprenda como a implementação de uma infraestrutura digital gera vantagem competitiva para o seu negócio e venha conhecer a nossa empresa.</p>
+                <div class="maps">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=-23.4580129,-46.6766817&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google map plugin html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+                </div>
+
+                <div class="underline"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="server">
+        <div class="container">
+            <div class="info">
+                <div class="circle2"></div>
+                <h2>Serviços</h2>
+                <p>Para oferecer experiências digitais excepcionais, independentemente da localização, e participar e competir nos maiores ecossistemas digitais, os líderes digitais precisam de uma plataforma digital altamente interconectada.</p>
+            </div>
+            <div class="cards">
+                <div class="blueCard">
+                    <div class="number">
+                        <img src="./img/number/01.svg" alt="um">
+                    </div>
+                    <h3>UX Design</h3>
+                    <div class="blueCardText">
+                        <ul>
+                            <li>Desenvolvimento Web</li>
+                            <li>SaaS</li>
+                            <li>Desenvolvedores Full Stack</li>
+                        </ul>
+                        <p>Criamos soluções inovadoras para resolver os problemas dos clientes e dar a você mais controle sobre o produto.</p>
+                    </div>
+                </div>
+
+                <div class="blueCard">
+                    <div class="number">
+                        <img src="./img/number/02.svg" alt="dois">
+                    </div>
+                    <h3>Front-end</h3>
+                    <div class="blueCardText">
+                        <p>O desenvolvimento web front-end é o desenvolvimento da interface gráfica do usuário de um site, por meio do uso de HTML , CSS e JavaScript , para que os usuários possam visualizar e interagir com o site</p>
+                        <p>As metas de desempenho se preocupam principalmente com o tempo de renderização, manipulando HTML, CSS e JavaScript para garantir que o site abra rapidamente.</p>
+                    </div>
+                </div>
+
+                <div class="blueCard">
+                    <div class="number">
+                        <img src="./img/number/03.svg" alt="três">
+                    </div>
+                    <h3>Teste</h3>
+                    <div class="blueCardText">
+                        <p>Projetando o sucesso através do web design criativo para que seu negócio seja o melhor.
+                        </p>
+                        <p>Melhorar o envolvimento do cliente com experiência aprimorada do usuário.</p>
+                    </div>
+                </div>
+
+                <div class="blueCard">
+                    <div class="number">
+                        <img src="./img/number/04.svg" alt="quatro">
+                    </div>
+                    <h3>Delivery</h3>
+                    <div class="blueCardText">
+                        <p>Desenvolva seu MVP com nossos especialistas que ajudam a criar uma solução que resolva os problemas do cliente.</p>
+                        <p>Preenchemos as lacunas de tecnologia para você.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="seguimentos">
+        <div class="container">
+            <div class="seg">
+                <h2>Segmentos</h2>
+                <p>Nossos especialistas em habilitação de soluções globais têm décadas de conhecimento especializado sobre data center e experiência prática na avaliação, habilitação, migração, otimização, planejamento, projeto, teste e implementação de infraestruturas de TI, operadoras e arquiteturas de cloud.</p>
+            </div>
+        </div>
+    </section>
+
+    <article>
+        <div class="containerSegmento">
+            <div class="cardSegmento">
+                <div class="cardImg">
+                    <div class="img">
+                        <img src="./img/icons/house.svg" alt="House">   
+                    </div>
+                </div>
+                <div class="text">
+                    <h3>E-commerce</h3>
+                    <p>Ajudamos varejistas, atacadistas e fornecedores físicos e digitais a automatizar operações comerciais e fluxos de trabalho de negócios. Com soluções de e-commerce, ERPS e atendimento ao cliente improvisado.</p>
+                </div>
+            </div>
+
+            <div class="cardSegmento">
+                <div class="cardImg">
+                    <div class="img">
+                        <img src="./img/icons/money.svg" alt="FinTechs">
+                    </div>
+                </div>
+                <div class="text">
+                    <h3>finTechs</h3>
+                    <p>Fintech é um termo que surgiu da união das palavras financial e technology, se tratando da tecnologia e inovação aplicadas na solução de serviços financeiros e que competem diretamente com o modelo tradicional ainda prevalente do setor.</p>
+                </div>
+            </div>
+
+            <div class="cardSegmento">
+                <div class="cardImg">
+                    <div class="img">
+                        <img src="./img/icons/mobilidade.svg" alt="Mobilidade">
+                    </div>
+                </div>
+                <div class="text">
+                    <h3>Mobilidade</h3>
+                    <p>À medida que as empresas se movem com mais rapidez, elas precisam de serviços adicionais em novos locais. Essa necessidade está levando os Provedores de Serviços a expandir a infraestrutura e aumentar a capacidade.</p>
+                </div>
+            </div>
+
+            <div class="cardSegmento">
+                <div class="cardImg">
+                    <div class="img">
+                        <img src="./img/icons/Entretenimento.svg" alt="Entreteniemento">
+                    </div>
+                </div>
+                <div class="text">
+                    <h3>Entretenimento</h3>
+                    <p>Veja quais locais de interconexão global têm altas concentrações de setores específicos e clusters de ecossistema. Explore regiões e mercados estratégicos que oferecem suporte à transformação digital para o seu setor.</p>
+                </div>
+            </div>
+
+            <div class="cardSegmento">
+                <div class="cardImg">
+                    <div class="img">
+                        <img src="./img/icons/direito.svg" alt="Direito">
+                    </div>
+                </div>
+                <div class="text">
+                    <h3>Direito</h3>
+                    <p>Os parceiros estão ajudando as empresas a nivelar o campo de jogo, aproximando-as dos ecossistemas. Veja como os parceiros permitem que as empresas expandam a infraestrutura globalmente.</p>
+                </div>
+            </div>
+
+            <div class="cardSegmento">
+                <div class="cardImg">
+                    <div class="img">
+                        <img src="./img/icons/hospitalidade.svg" alt="Hospitalidade">
+                    </div>
+                </div>
+                <div class="text">
+                    <h3>Hospitalidade</h3>
+                    <p>Os parceiros estão ajudando as empresas a nivelar o campo de jogo, aproximando-as dos ecossistemas. Veja como os parceiros permitem que as empresas expandam a infraestrutura globalmente.</p>
+                </div>
+            </div>
+
+        </div>
+    </article>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="img">
+                    <a href="#">
+                        <img src="./img/alvo.png" alt="logo">
+                        <span>TDX</span>
+                    </a>
+                </div>
+                <div class="copy">
+                   <p>
+                       &copy; Copyright 2022 | All Rights Reserved
+                   </p> 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
